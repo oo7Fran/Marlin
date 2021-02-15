@@ -737,7 +737,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 400 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1089,7 +1089,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -1500,17 +1500,17 @@
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
 #define PREHEAT_1_TEMP_HOTEND 200
-#define PREHEAT_1_TEMP_BED     75
+#define PREHEAT_1_TEMP_BED    60
 #define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "ABS"
 #define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    110
+#define PREHEAT_2_TEMP_BED    80
 #define PREHEAT_2_FAN_SPEED   255 // Value from 0 to 255
 
 #define PREHEAT_3_LABEL       "PETG"
 #define PREHEAT_3_TEMP_HOTEND 230
-#define PREHEAT_3_TEMP_BED    75
+#define PREHEAT_3_TEMP_BED    70
 #define PREHEAT_3_FAN_SPEED   255 // Value from 0 to 255
 
 /**
